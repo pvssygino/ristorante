@@ -228,9 +228,46 @@ export async function updatePaymentStatus(id, paymentStatus) {
 
 export async function getUmbrellaAvailability(date) {
   const umbrellas = await getUmbrellas();
-  const reservations = await getReservations({ date, bookingType: 'ombrellone' });
-  const occupied = computeUmbrellaOccupiedSet(reservations, date);
-  return umbrellas.map((item) => ({ ...item, occupied: occupied.has(item.code) }));
+
+  if (!date) {
+    return umbrellas.map((item) => ({
+      ...item,
+      occupied: false,
+      reservation: null,
+    }));
+  }
+
+  if (!hasSupabaseEnv) {
+    const occupied = computeUmbrellaOccupiedSet(demoState.reservations, date);
+    return umbrellas.map((item) => ({
+      ...item,
+      occupied: occupied.has(item.code),
+      reservation: occupied.has(item.code) ? { umbrella_code: item.code } : null,
+    }));
+  }
+
+  const { data, error } = await supabase.rpc('get_public_umbrella_occupancy', {
+    target_date: date,
+  });
+
+  if (error) throw new Error(normalizeSupabaseError(error));
+
+  const occupiedMap = Object.fromEntries(
+    (data || []).map((item) => [
+      item.umbrella_code,
+      {
+        full_name: item.full_name,
+        phone: item.phone,
+        status: item.status,
+      },
+    ])
+  );
+
+  return umbrellas.map((item) => ({
+    ...item,
+    occupied: Boolean(occupiedMap[item.code]),
+    reservation: occupiedMap[item.code] || null,
+  }));
 }
 
 export async function getTableAvailability(date, service) {
