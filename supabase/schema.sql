@@ -107,7 +107,6 @@ create policy "public can read settings" on public.settings for select to anon, 
 create policy "public can read umbrellas" on public.umbrella_spots for select to anon, authenticated using (true);
 create policy "public can read tables" on public.restaurant_tables for select to anon, authenticated using (true);
 create policy "public can insert reservations" on public.reservations for insert to anon, authenticated with check (true);
-create policy "public can read reservations" on public.reservations for select to anon, authenticated using (true);
 
 create policy "authenticated manage settings" on public.settings for all to authenticated using (true) with check (true);
 create policy "authenticated manage umbrellas" on public.umbrella_spots for all to authenticated using (true) with check (true);

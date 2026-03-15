@@ -194,9 +194,14 @@ export async function createReservation(payload) {
     return row;
   }
 
-  const { data, error } = await supabase.from('reservations').insert(payload).select().single();
+  const { error } = await supabase.from('reservations').insert(payload);
+
   if (error) throw new Error(normalizeSupabaseError(error));
-  return data;
+
+  return {
+    ...payload,
+    status: 'Nuova',
+  };
 }
 
 export async function updateReservationStatus(id, status) {
