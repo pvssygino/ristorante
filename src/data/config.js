@@ -16,7 +16,7 @@ export const venue = {
     'Lunedì - Venerdì: 12:00 - 15:00 / 19:00 - 23:30',
     'Sabato - Domenica: 12:00 - 16:00 / 19:00 - 00:00',
   ],
-  instagramUrl: 'https://instagram.com/theshark',
+  instagramUrl: 'https://instagram.com/theshark_ristorante',
   whatsappUrl: 'https://wa.me/393396810624',
   mapsUrl: 'https://www.google.com/maps?q=37.9182422,15.9851447',
   privacyContactName: 'The Shark',
