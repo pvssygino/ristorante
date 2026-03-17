@@ -49,16 +49,14 @@ cd nome-repo
 
 Hai diverse opzioni:
 
-#### 🔹 Metodo semplice (consigliato)
+#### 🔹 Metodo semplice (visualizzazione base)
 
-Apri direttamente il file:
+Dal terminale di Visual Studio Code
 
 ```bash
-index.html
+npm install
+npm run dev
 ```
-
-oppure cliccaci sopra due volte.
-
 ---
 
 #### 🔹 Metodo con server locale (consigliato per sviluppo)
@@ -142,7 +140,7 @@ Se usi già TheFork per la gestione fiscale, puoi:
 
 ## 👨‍💻 Autore
 
-Progetto sviluppato da **[TUO NOME]**
+Progetto sviluppato da pvssygino
 
 ---
 
