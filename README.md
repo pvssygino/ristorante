@@ -136,9 +136,3 @@ Nel codice del sito, vengono inizializzate diverse variabili che trovi nel file 
 Questo progetto è open-source e può essere modificato liberamente.
 
 ---
-
-## ⭐ Supporto
-
-Se ti piace il progetto:
-- lascia una ⭐ su GitHub
-- oppure contribuisci!
