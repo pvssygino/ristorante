@@ -2,7 +2,14 @@
 
 Benvenuto in **The Shark Web App**, una piattaforma pensata per la gestione moderna di ristoranti e locali.
 
-  <img src="assets/homepage.png" width="80%"/>
+ ## 📸 Screenshots
+
+<p align="center">
+  <img src="assets/homepage.png" width="30%"/>
+  <img src="assets/prenotazioni.png" width="30%"/>
+  <img src="assets/admin.png" width="30%"/>
+  <img src="assets/dashboard.png" width="30%"/>
+</p>
 
 Questo progetto nasce con l’obiettivo di digitalizzare e semplificare:
 - Prenotazioni tavoli
