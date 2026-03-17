@@ -1,9 +1,9 @@
 # 🍽️ The Shark – Sistema Web per Ristoranti
 
 Benvenuto in **The Shark Web App**, una piattaforma pensata per la gestione moderna di ristoranti e locali.
-<p align="center">
+
   <img src="assets/homepage.png" width="80%"/>
-</p>
+
 Questo progetto nasce con l’obiettivo di digitalizzare e semplificare:
 - Prenotazioni tavoli
 - Gestione eventi (es. Beer Pong)
