@@ -125,22 +125,9 @@ Se usi già TheFork per la gestione fiscale, puoi:
 - Il sistema è altamente personalizzabile
 - Può essere adattato a qualsiasi ristorante o locale
 - È pensato per essere espandibile (pagamenti, notifiche, ecc.)
-
----
-
-## 🔮 Sviluppi futuri
-
-- Pagamenti online integrati
-- Dashboard amministratore
-- Notifiche automatiche
-- Integrazione WhatsApp / Email
-- Sistema login utenti
-
----
-
-## 👨‍💻 Autore
-
-Progetto sviluppato da pvssygino
+  
+Environment Variables:
+Nel codice del sito, vengono inizializzate diverse variabili che trovi nel file .env.example. Queste includono chiavi personali di accesso alle API supabase, email personale con la quale inviare conferma di prenotazione ai clienti, variabili credenziali PayPal API per registrare i pagamenti sul proprio account personale.
 
 ---
 
