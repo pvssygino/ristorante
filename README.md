@@ -2,7 +2,7 @@
 
 Benvenuto in **The Shark Web App**, una piattaforma pensata per la gestione moderna di ristoranti e locali.
 
- ## 📸 Screenshots
+ ## 📸 Homepage
 
   <img src="assets/homepage.png" width="50%"/>
   
